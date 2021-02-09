@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yahtzee"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <ImageView
+            android:id="@+id/image_view_dice_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/die1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@null"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/image_view_dice_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/die2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_view_dice_1"
+            android:background="@null"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/image_view_dice_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/die3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_view_dice_2"
+            android:background="@null"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/image_view_dice_4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/die4"
+            app:layout_constraintTop_toBottomOf="@id/image_view_dice_1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@null"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/image_view_dice_5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/die5"
+            app:layout_constraintTop_toBottomOf="@id/image_view_dice_2"
+            app:layout_constraintStart_toEndOf="@id/image_view_dice_4"
+            android:background="@null"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/image_view_dice_6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/die6"
+            app:layout_constraintTop_toBottomOf="@id/image_view_dice_3"
+            app:layout_constraintStart_toEndOf="@id/image_view_dice_5"
+            android:background="@null"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/btn_roll"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="ROLL"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            app:layout_constraintTop_toBottomOf="@id/image_view_dice_5"
+            app:layout_constraintStart_toEndOf="@id/image_view_dice_4"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:text="RESET"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            app:layout_constraintTop_toBottomOf="@id/btn_roll"
+            app:layout_constraintStart_toEndOf="@id/image_view_dice_4"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_rolls_left"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:text="Rolls left"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            app:layout_constraintTop_toBottomOf="@id/btn_reset"
+            app:layout_constraintStart_toEndOf="@id/image_view_dice_4"
+            android:layout_marginTop="50dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

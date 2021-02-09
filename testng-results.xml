@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-09T16:34:26 CET" name="AllTestsSuite" finished-at="2021-02-09T16:34:47 CET" duration-ms="20594">
+    <groups>
+    </groups>
+    <test started-at="2021-02-09T16:34:26 CET" name="Dice Rolling Test" finished-at="2021-02-09T16:34:47 CET" duration-ms="20594">
+      <class name="TestMobile">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestMobile@77167fb7]" started-at="2021-02-09T16:34:26 CET" name="setUp" finished-at="2021-02-09T16:34:37 CET" duration-ms="11012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCal()[pri:0, instance:TestMobile@77167fb7]" started-at="2021-02-09T16:34:37 CET" name="testCal" finished-at="2021-02-09T16:34:47 CET" duration-ms="9551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCal -->
+      </class> <!-- TestMobile -->
+    </test> <!-- Dice Rolling Test -->
+  </suite> <!-- AllTestsSuite -->
+</testng-results>
